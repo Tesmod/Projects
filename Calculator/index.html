@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="first">
+      <table>
+        <div class="result">
+          <tr>
+            <td><input type="text" placeholder="0" id="result" disabled /></td>
+          </tr>
+        </div>
+        <div class="second">
+          <tr>
+            <td><button onclick="del()">C</button></td>
+            <td><button onclick="minus()">DEL</button></td>
+            <td><button>%</button></td>
+            <td><button>^</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="calc('(')">(</button></td>
+            <td><button onclick="calc(')')">)</button></td>
+            <td><button onclick="()">n²</button></td>
+            <td><button>n³</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="()">Log(</button></td>
+            <td><button onclick="()">√</button></td>
+            <td><button onclick="()">∛</button></td>
+            <td><button>SQRT</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="calc('sin(')" id="sin">Sin</button></td>
+            <td><button onclick="trig('cos(')">Cos</button></td>
+            <td><button onclick="trig('tan(')">Tan</button></td>
+            <td><button>SQRT</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="calc(7)">7</button></td>
+            <td><button onclick="calc(8)">8</button></td>
+            <td><button onclick="calc(9)">9</button></td>
+            <td><button onclick="calc('/')">/</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="calc(4)">4</button></td>
+            <td><button onclick="calc(5)">5</button></td>
+            <td><button onclick="calc(6)">6</button></td>
+            <td><button onclick="calc('+')">+</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="calc(1)">1</button></td>
+            <td><button onclick="calc(2)">2</button></td>
+            <td><button onclick="calc(3)">3</button></td>
+            <td><button onclick="calc('-')">-</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="calc('.')">.</button></td>
+            <td><button onclick="calc(0)">0</button></td>
+            <td><button onclick="calc('*')">*</button></td>
+            <td><button id="eval" onclick="Eval()">=</button></td>
+          </tr>
+        </div>
+      </table>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
